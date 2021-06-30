@@ -45,6 +45,9 @@ add Net_Pay float;
 alter table EmpPayroll
 add Income_Tax float;
 
+insert into EmpPayroll(EmployeeName,Basic_Pay, StartingDate, Gender, PhoneNumber, Address, Deductions, Taxable_Pay, Income_Tax, Net_Pay)
+values('Terisa', 50000, convert (date,'2010-8-19'), 'female', '2234567890', 'India',1000, 3000, 1000, 30000);
 
+update EmpPayroll set Department = 'Marketing' where EmployeeId=3;
 select * from EmpPayroll;
 
