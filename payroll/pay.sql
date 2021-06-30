@@ -24,3 +24,15 @@ select min(Salary) from EmpPayroll;
 select max(Salary) from EmpPayroll;
 select count(EmployeeId) from EmpPayroll;
 
+alter table EmpPayroll
+add PhoneNumber varchar(255)
+update EmpPayroll set PhoneNumber='1234567890' where EmployeeName='William';
+alter table EmpPayroll
+add Address varchar(255)
+update EmpPayroll set Address='India' where EmployeeName='William';
+alter table EmpPayroll
+add Department varchar(255)
+update EmpPayroll set Department='Digital Marketing' where EmployeeName='William';
+
+select * from EmpPayroll;
+
