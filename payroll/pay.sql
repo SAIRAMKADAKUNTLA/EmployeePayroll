@@ -8,4 +8,5 @@ StartingDate Date
 );
 insert into EmpPayroll(EmployeeName, Salary, StartingDate)
 values('William', 100000, convert (date,'2010-8-19'));
+
 select * from EmpPayroll;
